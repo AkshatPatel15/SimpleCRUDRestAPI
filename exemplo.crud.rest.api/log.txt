@@ -1,0 +1,24 @@
+CONTAINER ID   IMAGE                          COMMAND                  CREATED          STATUS          PORTS     NAMES
+38115085f15e   registry.k8s.io/pause:3.9      "/pause"                 10 minutes ago   Up 10 minutes             k8s_POD_spring-boot-app-5585b6655f-vbdqb_default_235586d1-c88f-4ba1-9caf-36a6b0d030a7_0
+fd96c0dcfbc1   mysql                          "docker-entrypoint.s…"   10 minutes ago   Up 10 minutes             k8s_mysql_mysql-7cfd4fd57b-m647p_default_284d88e7-c677-4ead-a5ca-2676fd47bb3d_0
+694962e93080   registry.k8s.io/pause:3.9      "/pause"                 11 minutes ago   Up 11 minutes             k8s_POD_mysql-7cfd4fd57b-m647p_default_284d88e7-c677-4ead-a5ca-2676fd47bb3d_0
+14eede059056   ba04bb24b957                   "/storage-provisioner"   14 minutes ago   Up 14 minutes             k8s_storage-provisioner_storage-provisioner_kube-system_54f7e8cc-5a1d-4c6c-9fe4-4870374e83a2_2
+169e57d9e111   kubernetesui/dashboard         "/dashboard --insecu…"   14 minutes ago   Up 14 minutes             k8s_kubernetes-dashboard_kubernetes-dashboard-779776cb65-rzmvv_kubernetes-dashboard_6002061c-2495-4f2e-a9e2-bdb12a620147_0
+060da6a8cfd7   kubernetesui/metrics-scraper   "/metrics-sidecar"       14 minutes ago   Up 14 minutes             k8s_dashboard-metrics-scraper_dashboard-metrics-scraper-b5fc48f67-pdvx9_kubernetes-dashboard_c6d3700c-54fa-4c37-a569-3b111e069cbf_0
+59a51bd4de41   cb7eac0b42cc                   "/usr/local/bin/kube…"   14 minutes ago   Up 14 minutes             k8s_kube-proxy_kube-proxy-j9b6c_kube-system_6d6dcdda-1705-4a9d-a024-84b1ef50c94f_0
+6139be9c4d14   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_kube-proxy-j9b6c_kube-system_6d6dcdda-1705-4a9d-a024-84b1ef50c94f_0
+b57eb7170049   2437cf762177                   "/coredns -conf /etc…"   14 minutes ago   Up 14 minutes             k8s_coredns_coredns-7db6d8ff4d-klc98_kube-system_af843344-e263-48f7-ba60-74bf55f954de_0
+91d69717d83a   2437cf762177                   "/coredns -conf /etc…"   14 minutes ago   Up 14 minutes             k8s_coredns_coredns-7db6d8ff4d-tbdvd_kube-system_e4ba4682-3e43-4e46-9b4b-2d7e411194ab_0
+92db66e96eef   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_kubernetes-dashboard-779776cb65-rzmvv_kubernetes-dashboard_6002061c-2495-4f2e-a9e2-bdb12a620147_0
+3b5d0daede8f   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_dashboard-metrics-scraper-b5fc48f67-pdvx9_kubernetes-dashboard_c6d3700c-54fa-4c37-a569-3b111e069cbf_0
+f24cca3eeddd   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_coredns-7db6d8ff4d-klc98_kube-system_af843344-e263-48f7-ba60-74bf55f954de_0
+7498f7e84067   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_coredns-7db6d8ff4d-tbdvd_kube-system_e4ba4682-3e43-4e46-9b4b-2d7e411194ab_0
+78bcdd7ffc65   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_storage-provisioner_kube-system_54f7e8cc-5a1d-4c6c-9fe4-4870374e83a2_0
+66359533ebd6   181f57fd3cdb                   "kube-apiserver --ad…"   14 minutes ago   Up 14 minutes             k8s_kube-apiserver_kube-apiserver-minikube_kube-system_3c555f828409b009ebee39fdbedfcac0_0
+3372c00081cd   014faa467e29                   "etcd --advertise-cl…"   14 minutes ago   Up 14 minutes             k8s_etcd_etcd-minikube_kube-system_063d6b9688927e601f52fd818d1305c5_0
+d451e56a960c   547adae34140                   "kube-scheduler --au…"   14 minutes ago   Up 14 minutes             k8s_kube-scheduler_kube-scheduler-minikube_kube-system_f9c8e1d0d74b1727abdb4b4a31d3a7c1_0
+39584c599d5a   68feac521c0f                   "kube-controller-man…"   14 minutes ago   Up 14 minutes             k8s_kube-controller-manager_kube-controller-manager-minikube_kube-system_7fd44e8d11c3e0ffe6b1825e2a1f2270_0
+39d89dd5a6cd   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_kube-apiserver-minikube_kube-system_3c555f828409b009ebee39fdbedfcac0_0
+78531eefa0ac   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_kube-scheduler-minikube_kube-system_f9c8e1d0d74b1727abdb4b4a31d3a7c1_0
+0f8326eb2db5   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_kube-controller-manager-minikube_kube-system_7fd44e8d11c3e0ffe6b1825e2a1f2270_0
+befe2baa23ac   registry.k8s.io/pause:3.9      "/pause"                 14 minutes ago   Up 14 minutes             k8s_POD_etcd-minikube_kube-system_063d6b9688927e601f52fd818d1305c5_0

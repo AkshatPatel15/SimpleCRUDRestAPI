@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root1
+      MYSQL_DATABASE: curd_db
+      MYSQL_USER: root1
+    volumes:
+      - curd:/var/lib/mysql
+    networks:
+      - my-network
+
+  spring-boot-app:
+    image: crud
+    container_name: spring-boot-container
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-container:3306/curd_db?allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root1
+    ports:
+      - 8082:8082
+    depends_on:
+      - mysql
+    networks:
+      - my-network
+
+networks:
+  my-network:
+
+volumes:
+  curd:
